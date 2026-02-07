@@ -1,0 +1,92 @@
+# see https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+---
+BasedOnStyle: LLVM
+Language: Cpp
+Standard: Latest
+
+ColumnLimit: 100
+
+# Indent
+IndentWidth: 4
+UseTab: Never
+IndentAccessModifiers: false
+AccessModifierOffset: -4
+NamespaceIndentation: All
+IndentRequiresClause: false
+
+#space
+SpaceBeforeRangeBasedForLoopColon: false
+AllowShortLambdasOnASingleLine: None
+BreakConstructorInitializers: BeforeComma
+
+
+# Align function
+AlignAfterOpenBracket: true
+
+
+# Escape Line Alignment
+AlignEscapedNewlines: LeftWithLastLine
+
+# Trailing Comments
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 2
+
+# Parameter Declaration
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCompoundRequirementOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Empty
+
+# break before
+AllowBreakBeforeNoexceptSpecifier: OnlyWithParen
+
+# break for statements
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterEnum: true
+  AfterStruct: true
+  AfterClass: true
+  SplitEmptyFunction: false
+  AfterFunction: true
+  AfterNamespace: true
+  AfterControlStatement: Always
+  AfterExternBlock: true
+  AfterUnion: true
+  BeforeCatch: false
+  BeforeElse: true
+  BeforeLambdaBody: true
+  SplitEmptyNamespace: false
+
+# Space before parens
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterFunctionDefinitionName: false
+  AfterForeachMacros: true
+  AfterIfMacros: true
+  AfterNot: true
+  AfterOverloadedOperator: true
+  AfterPlacementOperator: true
+  AfterRequiresInClause: true
+  BeforeNonEmptyParentheses: false
+
+# Space in parens
+SpacesInParens: Never
+SpacesInParensOptions:
+  InConditionalStatements: false
+  InCStyleCasts: false
+  InEmptyParentheses: false
+  ExceptDoubleParentheses: false
+  Other: false
+
+#Other space things
+SpacesInContainerLiterals: false
+SpacesInSquareBrackets: false
+SpacesInAngles: Never
+SpaceBeforeCaseColon: false
+
+# Pointer
+DerivePointerAlignment: false
+PointerAlignment: Left
+ReferenceAlignment: Pointer
