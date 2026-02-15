@@ -96,7 +96,7 @@ RequiresClausePosition: OwnLine
 # ================ SHORT FORM ALLOWANCES ================
 AllowShortLambdasOnASingleLine: None
 AllowShortBlocksOnASingleLine: Empty
-AllowShortFunctionsOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: Inline
 AllowShortLoopsOnASingleLine: false
 AllowShortNamespacesOnASingleLine: false
 AllowShortCompoundRequirementOnASingleLine: true
